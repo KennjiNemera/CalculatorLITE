@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalcController.Controller">
+   <top>
+      <AnchorPane prefHeight="48.0" prefWidth="379.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="expression" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="24.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="375.0">
+               <font>
+                  <Font name="Roboto Light" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="8.0" layoutY="69.0" prefHeight="68.0" prefWidth="358.0">
+               <font>
+                  <Font name="Roboto Condensed" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </top>
+   <center>
+      <GridPane prefHeight="435.0" prefWidth="375.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="7" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="*" textFill="#282828" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="-" textFill="#282828" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button depthTest="DISABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="94.0" prefWidth="98.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="ANS" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="=" textFill="#282828" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="+" textFill="#282828" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="71.0" prefWidth="96.0" text="C" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="DELETE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="/" textFill="#282828" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Roboto Light" size="37.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="100" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Button>
+            <Button defaultButton="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="OFF">
+               <font>
+                  <Font name="Roboto Black" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
